@@ -1,5 +1,5 @@
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
@@ -8,8 +8,14 @@ import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import FAQ from '@/components/FAQ';
 import Disclaimer from '@/components/Disclaimer';
+import ConsentDialog from '@/components/ConsentDialog';
+import { useToast } from "@/hooks/use-toast";
+import YoutubeEmbed from '@/components/YoutubeEmbed';
 
 const Index = () => {
+  const { toast } = useToast();
+  const [hasAgreed, setHasAgreed] = useState(false);
+  
   useEffect(() => {
     // Update document title
     document.title = "Legislator Link GPT | Connect With Your Representatives";
@@ -41,6 +47,15 @@ const Index = () => {
       document.removeEventListener('click', handleAnchorClick);
     };
   }, []);
+
+  const handleConsent = () => {
+    setHasAgreed(true);
+    toast({
+      title: "Welcome to Legislator Link GPT",
+      description: "Thank you for agreeing to our terms. You can now explore the full features.",
+      duration: 5000,
+    });
+  };
   
   return (
     <div className="min-h-screen bg-cyber-dark text-white">
@@ -48,6 +63,14 @@ const Index = () => {
       
       <main>
         <HeroSection />
+        {/* YouTube Video embed */}
+        <div className="container max-w-4xl mx-auto px-4 py-10">
+          <YoutubeEmbed 
+            videoId="DbYKQ-JU5EI" 
+            title="Legislator Link GPT Demo"
+            autoplay={true}
+          />
+        </div>
         <FeatureSection />
         <HowItWorks />
         <Testimonials />
@@ -56,6 +79,9 @@ const Index = () => {
       </main>
       
       <Footer />
+      
+      {/* Consent Dialog */}
+      <ConsentDialog onAgree={handleConsent} />
     </div>
   );
 };
