@@ -35,7 +35,7 @@ const ConsentDialog = ({ onAgree }: ConsentDialogProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="bg-cyber-dark border border-cyber-blue text-white max-w-md">
+      <DialogContent className="bg-cyber-dark border border-cyber-blue text-white max-w-[calc(100vw-2rem)] sm:max-w-md mx-auto">
         <DialogHeader>
           <DialogTitle className="cyber-text text-2xl font-bold text-cyber-blue">
             Disclaimer
