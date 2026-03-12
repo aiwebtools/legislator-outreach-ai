@@ -42,7 +42,7 @@ const Header = () => {
               <h1 className="cyber-text text-xl font-bold text-cyber-blue">
                 Legislator Link <span className="text-cyber-purple">GPT</span>
               </h1>
-              <p className="text-xs text-gray-400">Presented by <a href="https://www.aiwebtools.ai" className="text-cyber-pink hover:text-cyber-purple transition-colors">AiWebTools.Ai</a></p>
+              <p className="text-xs text-gray-400">Presented by <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="text-cyber-pink hover:text-cyber-purple transition-colors">AiWebTools.Ai</a></p>
             </div>
           </a>
           
