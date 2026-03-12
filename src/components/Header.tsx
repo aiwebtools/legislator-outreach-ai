@@ -22,7 +22,7 @@ const Header = () => {
     { name: 'WRITE YOUR OWN LAWS WITH AI', href: 'https://legislationwritergpt.lovable.app/' },
     { name: 'FAQ', href: '#faq' },
     { name: 'Disclaimer', href: '#disclaimer' },
-    { name: 'More AI Tools', href: 'https://www.aiwebtools.ai' },
+    { name: 'More AI Tools', href: 'https://aiwebtools.lovable.app/?via=aiwebtools' },
   ];
   
   return (
