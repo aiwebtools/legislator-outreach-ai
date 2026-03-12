@@ -35,7 +35,7 @@ const ConsentDialog = ({ onAgree }: ConsentDialogProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="bg-cyber-dark border border-cyber-blue text-white max-w-md">
+      <DialogContent className="bg-cyber-dark border border-cyber-blue text-white max-w-[calc(100vw-2rem)] sm:max-w-md mx-auto">
         <DialogHeader>
           <DialogTitle className="cyber-text text-2xl font-bold text-cyber-blue">
             Disclaimer
@@ -50,7 +50,7 @@ const ConsentDialog = ({ onAgree }: ConsentDialogProps) => {
             Legislator Link GPT provides information to help you connect with your elected representatives. This service is provided "as-is" without any warranties.
           </p>
           <p>
-            By continuing, you agree to our <a href="https://aiwebtools.ai/terms-of-services" className="cyber-link text-cyber-blue underline">Terms of Service</a> and acknowledge our <a href="https://openai.com/policies/privacy-policy/" className="cyber-link text-cyber-blue underline">Privacy Policy</a>.
+            By continuing, you agree to our <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="cyber-link text-cyber-blue underline">Terms of Service</a> and acknowledge our <a href="https://openai.com/policies/privacy-policy/" className="cyber-link text-cyber-blue underline">Privacy Policy</a>.
           </p>
           <p>
             We are not affiliated with any government agency or political party. All information should be verified independently.

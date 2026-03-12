@@ -47,7 +47,7 @@ const Disclaimer = () => {
               </p>
               
               <p>
-                <strong className="cyber-text text-cyber-blue">Terms of Service:</strong> By using Legislator Link GPT, you agree to our <a href="https://aiwebtools.ai/terms-of-services" className="cyber-link">Terms of Service</a>, which include additional terms and conditions governing your use of the service.
+                <strong className="cyber-text text-cyber-blue">Terms of Service:</strong> By using Legislator Link GPT, you agree to our <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="cyber-link">Terms of Service</a>, which include additional terms and conditions governing your use of the service.
               </p>
               
               <p>
